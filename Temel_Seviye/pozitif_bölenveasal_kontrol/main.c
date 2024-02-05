@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+//Girilen sayının bölenlerini bulur ve asal mı diye kontrol eder.
 int main(){
     int sayi,i,kontrol=0;
     printf("bir sayı gir:");
@@ -13,8 +13,11 @@ int main(){
     printf("\n");
     
     for(i=2;i<sayi;i++){
-        if(sayi%i==0)
+        if(sayi%i==0){
             kontrol=1;
+            break;
+        }
+        
     }
     
     if(sayi==1)
